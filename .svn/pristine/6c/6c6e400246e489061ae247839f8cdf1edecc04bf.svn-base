@@ -1,0 +1,92 @@
+<template>
+  <el-dialog
+  :title="updatePwd"
+  :visible.sync="updPwddialogVisible"
+  width="30%"
+  :before-close="handleClose">
+    <el-form :model="ruleForm2" :label-position="labelPosition" status-icon :rules="rules2" ref="ruleForm2" label-width="100px" class="login-Form">
+      <el-form-item label="旧密码: " prop="oldpass" class="labelName">
+        <el-input type="password" v-model="ruleForm2.oldpass" auto-complete="off"></el-input>
+      </el-form-item>
+      <el-form-item label="新密码: " prop="newpass" class="labelName">
+        <el-input type="password" v-model="ruleForm2.newpass" auto-complete="off"></el-input>
+      </el-form-item>
+      <el-form-item label="确认密码" prop="checkPass">
+        <el-input type="password" v-model="ruleForm2.checkPass" auto-complete="off"></el-input>
+      </el-form-item>
+      <el-form-item>
+        <el-button type="primary" @click="submitForm('ruleForm2')" class="submitBtn">提交</el-button>
+      </el-form-item>
+    </el-form>
+  </el-dialog>
+</template>
+<script>
+export default {
+  name: 'UpdatePwd',
+  props: ['updPwddialogVisible'],
+  data () {
+      var checkOldPass = (rule, value, callback) => {
+        if (!value) {
+          return callback(new Error('用户名不能为空'));
+        }
+      };
+      var validatePass = (rule, value, callback) => {
+        if (value === '') {
+          callback(new Error('请输入密码'));
+        } else {
+          if (this.ruleForm2.checkPass !== '') {
+            this.$refs.ruleForm2.validateField('checkPass');
+          }
+          callback();
+        }
+      };
+      var validatePass2 = (rule, value, callback) => {
+        if (value === '') {
+          callback(new Error('请再次输入密码'));
+        } else if (value !== this.ruleForm2.newpass) {
+          callback(new Error('两次输入密码不一致!'));
+        } else {
+          callback();
+        }
+      };
+    return {
+      updatePwd: '修改密码',
+      labelPosition: 'right',
+      ruleForm2: {
+        oldpass: '',
+        newpass: '',
+        checkPass: '',
+      },
+      rules2: {
+        oldpass: [
+            { validator: checkOldPass, trigger: 'blur'}
+        ],
+        newpass: [
+          { validator: validatePass, trigger: 'blur' }
+        ],
+        checkPass: [
+          { validator: validatePass2, trigger: 'blur' }
+        ],
+      },
+    }
+  },
+  methods:{
+    handleClose(done) {
+      this.$confirm('确认关闭？')
+        .then(_ => {
+          done();
+        })
+        .catch(_ => {});
+    },
+    // handle form submit event,pass the props to parent component
+    submitForm(argument){
+        this.$emit('updpwdDialog', false);
+        sessionStorage.seStore = 'This is Session Storage';
+        sessionStorage.setItem('comment', 'SetItem to set value');
+        localStorage.seStore = 'This is Local Storage';
+        localStorage.setItem('comment', 'SetItem to set value in Local');
+    }
+  }
+}
+</script>
+%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;D:\Program Files\Microsoft SQL Server\120\DTS\Binn\;D:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;D:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;D:\Program Files\Microsoft SQL Server\120\Tools\Binn\;D:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;D:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;D:\Program Files\Microsoft SQL Server\110\Tools\Binn\;D:\Perry_Vcolco\SoftwareInstallation\Git\cmd;D:\Perry_Vcolco\SoftwareInstallation\NodeJs\

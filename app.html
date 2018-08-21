@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- Use CLI to set up vue environment -->
+<!-- 
+# 全局安装 vue-cli
+$ npm install --global vue-cli
+# 创建一个基于 webpack 模板的新项目
+$ vue init webpack my-project
+# 安装依赖，走你
+$ cd my-project
+$ npm run dev
+
+// Update by : Perry 
+// Update Date: 2018-05-15 
+// Update Reason:disable lint check when development
+ -->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <!--注释人：向浩
+    注释时间：2018-07-03
+    注释原因：更改页面的icon和title
+    -->
+  <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon" />
+  <title>河北省道路运输第三方安全监测平台</title>
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=Xk63FYkGBlGO6h7vZQ407Ggi"></script>
+  <!--注释人：向浩
+注释时间：2018-07-16
+注释原因：通过包管理来进行模块加载，不采用js应用的方式加载 - 目前这种包管理方式还不能正常工作，展示还是需要采用这种方式
+-->
+  <script type="text/javascript" src="/static/WS.js"></script>
+  <script type="text/javascript" src="/static/WSData.js"></script>
+  <script type="text/javascript" src="/static/binary-stream.js"></script>
+  <script type="text/javascript" src="/static/stream-reader.js"></script>
+  <script type="text/javascript" src="/static/stream-writer.js"></script>
+  <script>
+    var global_alarmvehicle = ['1', '2', '3'];
+  </script>
+
+
+</head>
+
+<body>
+  <!-- // Update by : Perry
+    // Update Date: 2018-04-28
+    // Update Reason: build up message count-->
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
+</html>

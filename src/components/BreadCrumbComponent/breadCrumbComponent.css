@@ -1,0 +1,19 @@
+.el-breadcrumb {
+  /* 导入文件的使用scoped限制css作用的作用范围 */
+  line-height: 43px !important;
+  margin-right: 10px;
+}
+
+/* 父级目录样式 */
+
+.el-breadcrumb__inner.is-link {
+  /* 导入文件的使用scoped限制css作用的作用范围 */
+  color: #fff !important;
+}
+
+/* 当前层级样式 */
+
+.el-breadcrumb__item:last-child .el-breadcrumb__inner {
+  /* 导入文件的使用scoped限制css作用的作用范围 */
+  color: #fff !important;
+}

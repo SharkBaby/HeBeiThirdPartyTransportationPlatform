@@ -1,0 +1,9 @@
+/* 显示名字 */
+
+.message-center {
+  margin: auto 40px;
+}
+
+.message-center .el-tabs__nav-wrap {
+  width: 100%;
+}

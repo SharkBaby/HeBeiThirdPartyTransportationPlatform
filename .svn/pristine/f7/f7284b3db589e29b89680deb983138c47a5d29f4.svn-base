@@ -1,0 +1,15 @@
+.personal-settings-menu {
+  float: right;
+  margin-right: 20px !important;
+}
+
+.el-menu--horizontal>.el-submenu .el-submenu__title {
+  height: 40px !important;
+  line-height: 40px !important;
+}
+.el-menu--horizontal{
+  border-bottom: none !important;
+}
+a.actionurl-name{
+  color: #fff !important;
+}

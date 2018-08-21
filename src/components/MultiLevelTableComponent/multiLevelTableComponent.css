@@ -1,0 +1,127 @@
+/* set Tab Header */
+
+.multi-level-table-comp .el-tabs__nav {
+  text-align: center;
+  float: none;
+}
+
+.multi-level-table-comp .el-tabs__item {
+  color: #fff;
+  font-size: 16px;
+}
+
+.multi-level-table-comp .el-tabs__active-bar {
+  display: inline;
+  left: auto;
+}
+
+.multi-level-table-comp .multi-level-table-search-creteria,
+.multi-level-table-comp .multi-level-table-button {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+/* 设置表头的颜色和单元格的颜色 */
+
+.multi-level-table-comp .table-body-row-class-name {
+  background: #34495e !important;
+  color: #fff;
+}
+
+.multi-level-table-comp .table-cell-class-name {
+  background: #4278BE !important;
+  color: #fff;
+}
+
+.multi-level-table-comp .multi-level-table {
+  border: 1px solid #ebeef5;
+}
+
+.multi-level-table-comp .multi-level-table td,
+.multi-level-table-comp .multi-level-table th {
+  border-right: 1px solid #ebeef5;
+  padding: 0 !important;
+}
+
+/* 修改报表里面a标签的默认样式 */
+
+.multi-level-table-comp .table-router-link {
+  text-decoration: none;
+  color: #12c5eb;
+}
+
+/* 设置报表单元格的高度 */
+
+.multi-level-table-comp .multi-level-table td p,
+.multi-level-table-comp .multi-level-table th p {
+  -webkit-margin-before: 5px;
+  -webkit-margin-after: 5px;
+}
+
+/* 暂无数据的样式 */
+
+.multi-level-table-comp .el-table__empty-block {
+  background: #34495e;
+}
+
+/* element ui table中一列highlight显示，hover时如何不移除颜色？ */
+.multi-level-table-comp .el-table__body tr:hover>td {
+  background-color: #18232d !important;
+}
+
+.multi-level-table-comp .el-table__body tr.current-row>td {
+  background-color: #18232d !important;
+}
+.multi-level-table-comp .el-table td {
+  /* 导入文件的使用scoped限制css作用的作用范围 */
+  padding: 0 !important;
+}
+
+/* ZoneCheckRank */
+
+.multi-level-table-comp .el-table__body-wrapper,
+.multi-level-table-comp .el-table--scrollable-x .el-table__body-wrapper {
+  overflow-x: unset;
+}
+
+.multi-level-table-comp .check-footer-p {
+  color: #fff;
+  font-size: 14px;
+  max-height: 38px;
+}
+
+/* pagination */
+
+.multi-level-table-comp .multi-level-pagination {
+  text-align: right;
+}
+
+/* 调整分页的字体样式 */
+
+.multi-level-table-comp .multi-level-pagination .el-pagination__total,
+.multi-level-table-comp .multi-level-pagination .el-pagination__jump {
+  color: #fff;
+}
+
+/* 实时警情的样式处理 */
+.multi-level-table-comp .supervise-btn {
+  background: url('../../assets/icons.png') no-repeat;
+  background-position: -154px -442px;
+  float: left;
+}
+.multi-level-table-comp .supervise-btn:hover {
+  background-position: -199px -442px;
+}
+.multi-level-table-comp .supervise-location {
+  background: url('../../assets/icons.png') no-repeat;
+  background-position: -330px -442px;
+  float: right;
+}
+.multi-level-table-comp .supervise-location:hover {
+  background-position:-375px -442px;
+}
+.multi-level-table-comp .supervise-operation-a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}

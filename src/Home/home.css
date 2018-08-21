@@ -1,0 +1,36 @@
+.home {
+  height: 100%;
+  /**
+    注释人：向浩
+    注释时间：2018-07-03
+    注释原因：调整整体样式
+    */
+  /* width: 95%; */
+  margin: auto;
+}
+
+/* 设置路由切换的样式 */
+
+/* 可以设置不同的进入和离开动画 */
+
+/* 设置持续时间和动画函数 */
+
+.router-slide-enter-active {
+  /* transition: all .05s ease; */
+  transition: opacity .05s;
+}
+
+.router-slide-leave-active {
+  /* transition: all .1s cubic-bezier(1.0, 0.5, 0.8, 1.0); */
+  transition: opacity .15s;
+}
+
+.router-slide-enter {
+  /* transform: translateX(50px); */
+  opacity: 0;
+}
+
+.router-slide-leave-to {
+  /* transform: translateX(-50px); */
+  opacity: 0;
+}

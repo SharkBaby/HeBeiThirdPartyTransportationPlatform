@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  background: url('../assets/background.jpg') no-repeat;
+}
+
+div.login {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  margin-left: -215px;
+  margin-top: -200px;
+}
+

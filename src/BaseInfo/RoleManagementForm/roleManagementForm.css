@@ -1,0 +1,13 @@
+.dialog-class {
+  text-align: left;
+}
+/* 限制模态窗口的高度 */
+
+.role-management-dialog-class .el-tree {
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+.role-management-dialog-btn {
+  text-align: right;
+}

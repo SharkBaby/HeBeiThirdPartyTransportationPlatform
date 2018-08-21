@@ -1,0 +1,36 @@
+<template>
+  <div class="home-security-right">
+      <home-security-item :key="hmSecItem.key" :idName="hmSecItem.idName" :homSecItmTitle="hmSecItem.homSecItmTitle" :subTitle="hmSecItem.subTitle" v-for="hmSecItem in HomeSecurityItems"></home-security-item>
+  </div>
+</template>
+<style type="text/css" src="./homeSecurityRight.css"></style>
+<script>
+import HomeSecurityItem from "./HomeSecurityItem/HomeSecurityItem";
+
+export default {
+  name: 'HomeSecurityRight',
+  components: {
+    HomeSecurityItem
+  },
+  data () {
+    return {
+      HomeSecurityItems: [{
+        key: 1,
+        idName: 'home_security_online_chart',
+        homSecItmTitle: '车辆在线情况',
+        subTitle: '重点：21,0667辆'
+      },{
+        key: 2,
+        idName: 'home_security_break_chart',
+        homSecItmTitle: '车辆违章情况',
+        subTitle: '两客：1,9614辆'
+      },{
+        key: 3,
+        idName: 'home_security_alarm_chart',
+        homSecItmTitle: '报警热点',
+        subTitle: ''
+      }]
+    }
+  }
+}
+</script>

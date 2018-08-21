@@ -1,0 +1,8 @@
+body{
+    margin: 0;
+}
+#app{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #34495e;
+}

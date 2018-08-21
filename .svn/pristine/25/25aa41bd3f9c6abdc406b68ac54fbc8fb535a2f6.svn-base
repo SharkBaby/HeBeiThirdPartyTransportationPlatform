@@ -1,0 +1,148 @@
+<template>
+<el-menu
+  :default-active="activeIndex2"
+  class="personal-settings-menu"
+  mode="horizontal"
+  @select="handleSelect"
+  background-color="#2C4257"
+  text-color="#fff"
+  active-text-color="#ffd04b">
+  <el-submenu :index="key" v-for="(value, key) in personalToolArr" :key="key">
+    <template slot="title">{{value.TabName}}</template>
+    <el-menu-item :index="subKey" v-for="(subValue, subKey)  in value.TabItems" :key="subKey" >
+        <!-- for download -->
+        <a :href="subValue.actionUrl" v-if="subValue.actionCategory == actionType.download" class="actionurl-name">{{subValue.actionName}}</a>
+        <!-- for dialog -->
+        <span v-else-if="subValue.actionCategory == actionType.dialog" @click="handleItemClick(subKey)">{{subValue.actionName}}</span>
+        <!-- for change theme -->
+        <change-theme v-else-if="subValue.actionCategory == actionType.changeTheme">{{subValue.actionName}}</change-theme>
+    </el-menu-item>
+  </el-submenu>
+  <update-pwd :updPwddialogVisible="updPwddialogVisible" v-on:updpwdDialog="updPwdMethod"></update-pwd>
+  <logout :logdialogVisible="logdialogVisible" v-on:logoutDialog="logoutMethod"></logout>
+  <user-feedback :usrFedbkdialogVisible="usrFedbkdialogVisible" v-on:usrFedbkDialog="usrFedbkMethod"></user-feedback>
+</el-menu>
+</template>
+<style src="./personalSettings.css" type="text/css"></style>
+<script>
+import UpdatePwd from '../../UpdatePwd/UpdatePwd';
+import Logout from '../../Logout/Logout';
+import UserFeedback from '../../UserFeedback/UserFeedback';
+import ChangeTheme from '../../ChangeTheme/ChangeTheme';
+export default {
+  name: 'PersonalSettings',
+  components:{
+      UpdatePwd,
+      Logout,
+      UserFeedback,
+      ChangeTheme,
+  },
+  data() {
+      return {
+        activeIndex2: '1',
+        updPwddialogVisible: false,
+        logdialogVisible: false,
+        usrFedbkdialogVisible: false,
+        actionType: {
+            download: 'download',
+            dialog: 'dialog',
+            changeTheme: 'changeTheme',
+        },
+        personalToolArr: {
+            crntuserTab: {
+                TabName: 'tangjing',
+                TabItems: {
+                },
+            },
+            workingItemsTab: {
+                TabName: '我的工作台',
+                TabItems: {
+                    vehicleMonitor: {
+                        actionCategory: 'dialog',
+                        actionName: '车辆监管',
+                    },
+                    systemSettings: {
+                        actionCategory: 'dialog',
+                        actionName: '系统配置',
+                    },
+                    basicInfor: {
+                        actionCategory: 'dialog',
+                        actionName: '基本信息',
+                    },
+                    platformHistory: {
+                        actionCategory: 'dialog',
+                        actionName: '平台历程',
+                    },
+                    serverMonitory: {
+                        actionCategory: 'dialog',
+                        actionName: '服务器监控',
+                    },
+                    changeTheme: {
+                        actionCategory: 'changeTheme',
+                        actionName: '换肤',
+                    },
+                },
+            },
+            personalSettingsTab: {
+                TabName: '个人中心',
+                TabItems: {
+                    updatePwd: {
+                        actionCategory: 'dialog',
+                        actionName: '修改密码',
+                    },
+                    logout: {
+                        actionCategory: 'dialog',
+                        actionName: '注销登录',
+                    },
+                    userFeedback: {
+                        actionCategory: 'dialog',
+                        actionName: '用户反馈',
+                    },
+                    manuals: {
+                        actionCategory: 'download',
+                        actionName: '操作手册',
+                        actionUrl: '../../../Export/Download/湖南省重点营运车辆动态信息公共监管与服务平台--操作手册.docx',
+                    }
+                }
+            },
+            amountNumberTab: {
+                TabName: '0',
+                TabItems: {
+                },
+            },
+        },
+      }
+    },
+    methods: {
+      handleSelect(key, keyPath) {
+        console.log(key, keyPath);
+      },
+      // item click in personal settings
+        handleItemClick(subKey){
+            switch(subKey){
+                case 'updatePwd':
+                    this.updPwddialogVisible = true;
+                    break;
+                case 'logout':
+                    this.logdialogVisible = true;
+                    break;
+                case 'userFeedback':
+                    this.usrFedbkdialogVisible = true;
+                    break;
+            }
+        },
+        // Update by : Perry
+        // Update Date: 2018-04-25
+        // Update Reason: sychronize state in parent component when child component props is changed
+        updPwdMethod(message){
+            this.updPwddialogVisible = message;
+        },
+        logoutMethod(message){
+            this.logdialogVisible = message;
+        },
+        usrFedbkMethod(message){
+            this.usrFedbkdialogVisible = message;
+        },
+    }
+  }
+</script>

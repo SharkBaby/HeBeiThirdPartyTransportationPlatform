@@ -1,0 +1,47 @@
+.home-split-line {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+/* 天气样式 */
+
+.weather-part {
+  height: 38px;
+  overflow: hidden;
+}
+
+.weather {
+  display: block;
+  transition: top 1s;  
+}
+/* 当走到最后一个item的时候有bug，通过在最后一个元素的时候清空动画 */
+.rollScreen_list_unanim {
+  transition: none
+}
+
+span.weather-ico {
+  height: 40px;
+  width: 50px;
+  background: url('../../assets/weather-icon.png') no-repeat;
+  float: left;
+  background-position: -143px -185px;
+}
+
+label.weather-label {
+  line-height: 38px;
+}
+
+.personal-settings {
+  text-align: right;
+  padding-right: 100px;
+}
+
+/* 面包屑样式 */
+
+.bread-crub {
+  float: left;
+}
+
+.el-breadcrumb__item:last-child .el-breadcrumb__inner {
+  cursor: pointer;
+}

@@ -1,0 +1,10 @@
+.dialog-class {
+  text-align: left;
+}
+
+/* 设置下拉框的长度对齐 */
+
+.role-common-dialog-class .el-form-item__content .el-select,
+.role-common-dialog-class .el-form-item__content .input-text {
+  width: 100%;
+}

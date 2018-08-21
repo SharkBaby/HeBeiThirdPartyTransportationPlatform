@@ -1,0 +1,8 @@
+p.home-security-head {
+  font-size: 15px;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+  line-height: 50px;
+}
+

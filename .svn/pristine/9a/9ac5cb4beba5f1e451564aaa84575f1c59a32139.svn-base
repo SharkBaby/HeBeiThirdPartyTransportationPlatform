@@ -1,0 +1,40 @@
+<template>
+  <div class="accessPlatform-regulation-part">
+    <p class="accessPlatform-regulation-head">{{ accPlatTitle }}</p>
+    <div class="accessPlatform-regulation-detail-part">
+      <div class="accessPlatform-regulation-detail">
+        <div class="">
+          <img src="../../assets/online-platform-number-sector.png" class="online-platform-number">
+          <label>{{accPlaRegDetTopTitle}}</label>
+          <label>{{accPlaRegDetTopNumber}}</label>
+        </div>
+        <div class="">
+          <img src="../../assets/offline-platform-number-sector.png" class="offline-platform-number">
+          <label>{{accPlaRegDetBotTitle}}</label>
+          <label>{{accPlaRegDetBotNumber}}</label>
+        </div>
+      </div>
+      <div class="online-platform-total">
+        <span class="online-platform_total_number">{{onlplatTotalNmber}}</span>
+        <label>{{onltotalText}}</label>
+      </div>
+    </div>
+  </div>
+</template>
+<style type="text/css" src="./accessPlatformRegulation.css"></style>
+<script>
+export default {
+  name: 'AccessPlatformRegulation',
+  data () {
+    return {
+      accPlatTitle: '接入监管平台',
+      accPlaRegDetTopTitle: '两客一危',
+      accPlaRegDetTopNumber: 0,
+      accPlaRegDetBotTitle: '重货及半挂牵引车',
+      accPlaRegDetBotNumber: 0,
+      onlplatTotalNmber: 0,
+      onltotalText: '接入平台总数'
+    }
+  }
+}
+</script>

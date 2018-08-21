@@ -1,0 +1,103 @@
+/* set Tab Header */
+
+/* div.el-tabs__nav {
+  text-align: center;
+  float: none;
+}
+
+div.el-tabs__item {
+  color: #fff;
+  font-size: 16px;
+}
+
+div.el-tabs__active-bar {
+  display: inline;
+  left: auto;
+} */
+
+.multi-level-no-table-comp {
+  margin-bottom: 10px;
+}
+
+/* 设置表头的颜色和单元格的颜色 */
+
+.multi-level-no-table-comp .table-body-row-class-name {
+  background: #34495e !important;
+  color: #fff;
+}
+
+.multi-level-no-table-comp .table-cell-class-name {
+  background: #4278BE !important;
+  color: #fff;
+}
+
+.multi-level-no-table-comp .multi-level-no-table {
+  border: 1px solid #ebeef5;
+}
+
+.multi-level-no-table-comp .multi-level-no-table td,
+.multi-level-no-table-comp .multi-level-no-table th {
+  border-right: 1px solid #ebeef5;
+  /* 导入文件的使用scoped限制css作用的作用范围 */
+  padding: 0 !important;
+}
+
+/* 修改报表里面a标签的默认样式 */
+
+.multi-level-no-table-comp .table-router-link {
+  text-decoration: none;
+  color: #12c5eb;
+}
+
+/* 设置报表单元格的高度 */
+
+.multi-level-no-table-comp .multi-level-no-table td p,
+.multi-level-no-table-comp .multi-level-no-table th p {
+  -webkit-margin-before: 5px;
+  -webkit-margin-after: 5px;
+}
+
+/* 暂无数据的样式 */
+
+.multi-level-no-table-comp .el-table__empty-block {
+  background: #34495e;
+}
+
+/* element ui table中一列highlight显示，hover时如何不移除颜色？ */
+
+.multi-level-no-table-comp .el-table__body tr:hover>td {
+  background-color: #18232d !important;
+}
+
+.multi-level-no-table-comp .el-table__body tr.current-row>td {
+  background-color: #18232d !important;
+}
+
+/* ZoneCheckRank */
+
+.multi-level-no-table-comp .el-table__body-wrapper,
+.multi-level-no-table-comp .el-table--scrollable-x .el-table__body-wrapper {
+  overflow-x: unset;
+}
+
+.multi-level-no-table-comp .check-footer-p {
+  color: #fff;
+  font-size: 14px;
+  max-height: 38px;
+}
+
+/* pagination */
+
+.multi-level-no-table-comp .multi-level-pagination {
+  text-align: right;
+}
+
+/* 调整分页的字体样式 */
+
+.multi-level-no-table-comp .multi-level-pagination .el-pagination__total,
+.multi-level-no-table-comp .multi-level-pagination .el-pagination__jump {
+  color: #fff;
+}
+.multi-level-no-table-comp .multi-level-no-table-button{
+  margin-bottom: 10px;
+}

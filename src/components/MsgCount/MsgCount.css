@@ -1,0 +1,17 @@
+/* set Tab Header */
+
+.msg-count .el-tabs__nav {
+  text-align: center;
+  float: none;
+}
+
+.msg-count .el-tabs__item {
+  color: #fff;
+  font-size: 16px;
+}
+
+.msg-count .el-tabs__active-bar {
+  display: inline;
+  left: auto;
+}
+

@@ -1,0 +1,71 @@
+.vehicle-insurance-left{
+    width: 45%;
+    height: 800px;
+    position: relative;
+    float: left;
+    overflow-y: scroll;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.cmpinsurance{
+    position: relative;
+    width: 46%;
+    height: 150px;
+    background-color: #4085EB;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 5px 20px;
+    margin-top: 30px;
+    margin-right: 4%;
+    float: left;
+    font-size: 14px;
+}
+.insurance_img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    top: -25px;
+    left: 50%;
+    margin-left: -25px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cmpname{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    text-align: center;
+}
+.assment_rate{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    left: 0;
+}
+.assment_rate span{
+    display: block;
+    line-height: 40px;
+    margin-top: 0;
+    float: left;
+}
+.assment{
+    width: 40%;
+    height: 40px;
+    text-align: center
+}
+.rate{
+    width: 60%;
+    height: 40px;
+    text-align: center;
+    font-size: 28px;
+    color:#66FF02;
+}

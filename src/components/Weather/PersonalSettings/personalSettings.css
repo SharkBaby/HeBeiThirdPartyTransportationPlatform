@@ -1,0 +1,43 @@
+.personal-settings-menu {
+  display: inline-block;
+}
+
+.el-menu--horizontal>.el-submenu .el-submenu__title,
+.el-menu--horizontal>.el-menu-item {
+  /* 导入文件的使用scoped限制css作用的作用范围 */
+  height: 40px !important;
+  line-height: 40px !important;
+}
+
+.el-menu--horizontal {
+  /* 导入文件的使用scoped限制css作用的作用范围 */
+  border-bottom: none !important;
+}
+
+.actionurl-name {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.router-link {
+  /* 导入文件的使用scoped限制css作用的作用范围 */
+  text-decoration: none !important;
+}
+
+/* 控制登录名的样式 */
+
+.personal-settings-menu .el-menu-item.is-disabled {
+  opacity: 0.7;
+}
+
+.personal-settings-menu .el-menu-item {
+  font-size: 15px;
+}
+.personal-menu-item{
+  padding-left: 20px !important;
+}
+.el-menu--collapse .el-menu .el-submenu,
+.el-menu--popup {
+  min-width: 120px !important;
+}

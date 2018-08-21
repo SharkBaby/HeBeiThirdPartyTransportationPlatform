@@ -1,0 +1,18 @@
+<template>
+  <div class="header-container">
+    <Header />
+    <Weather />
+  </div>
+</template>
+<style src="./header-container.css" type="text/css"></style>
+<script>
+import Header from '../../components/Header/Header'
+import Weather from '../../components/Weather/Weather'
+export default {
+  name: 'Header-Container',
+  components: {
+    Header,
+    Weather
+  }
+}
+</script>

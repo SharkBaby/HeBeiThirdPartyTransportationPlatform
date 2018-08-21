@@ -1,0 +1,21 @@
+/* VehicleBreakRule */
+
+.vehicle-break-rule {
+  margin: auto 40px;
+}
+
+.vehicle-break-rule-multilevel {
+  width: 100%;
+  overflow-y: auto;
+}
+.vehicle-break-rule-multilevel .el-row{
+  display: inline-block;
+}
+.vehicle-break-rule .check-footer-p {
+  color: #fff;
+  font-size: 14px;
+  max-height: 38px;
+  position: relative;
+  bottom: 36px;
+  display: inline-block;
+}

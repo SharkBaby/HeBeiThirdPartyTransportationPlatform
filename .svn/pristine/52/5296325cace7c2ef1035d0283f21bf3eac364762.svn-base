@@ -1,0 +1,39 @@
+<template>
+  <ul class="left-ico-list">
+    <li>
+      <a class="page-load" href="#">
+        <span class="ban6"></span>
+        考核通报 >>
+      </a>
+    </li>
+    <li>
+      <a class="page-load" href="#">
+        <span class="share"></span>
+        数据共享 >>
+      </a>
+    </li>
+    <li>
+      <a class="page-load" href="#">
+        <span class="report"></span>
+        统计分析 >>
+      </a>
+    </li>
+    <li>
+      <a class="page-load" href="#">
+        <span class="companySupervise"></span>
+        企业监管 >>
+      </a>
+    </li>
+  </ul>
+</template>
+<style src="./maindisplayitems.css" type="text/css"></style>
+<script>
+export default {
+  name: 'mainDisplayItems',
+  data () {
+    return {
+      
+    }
+  }
+}
+</script>

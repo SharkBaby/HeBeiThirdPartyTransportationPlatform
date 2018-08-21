@@ -1,0 +1,100 @@
+.review-info {
+  height: 86%;
+  background: #25384f;
+  padding: 20px;
+}
+
+.review-info-top {
+  height: 30%;
+}
+
+.review-info-bottom {
+  height: 70%;
+}
+
+.review-info-bottom-left {
+  padding: 0 20px;
+  height: 100%;
+}
+
+.review-info-bottom-left-content {
+  box-shadow: -2px 0 2px #5c6369, 2px 0 2px #5c6369, 0 -2px #5c6369, 0 2px 3px #5c6369;
+  height: 100%;
+}
+
+.review-info-bottom-right {
+  height: 100%;
+  padding: 0 20px;
+}
+
+.review-info-bottom-right-top {
+  height: 40%;
+  box-shadow: -2px 0 2px #5c6369, 2px 0 2px #5c6369, 0 -2px #5c6369, 0 2px 3px #5c6369;
+}
+
+.review-info-bottom-right-bottom {
+  height: 60%;
+  box-shadow: -2px 0 2px #5c6369, 2px 0 2px #5c6369, 0 -2px #5c6369, 0 2px 3px #5c6369;
+  overflow: auto;
+}
+/* 实现表格的表头不动 */
+.review-info-bottom-right-bottom .el-table--enable-row-transition{
+    height: 100% !important;
+}
+.review-info-bottom-right-bottom .el-table__body-wrapper{
+    height: 100% !important;
+}
+
+/* 设置表头的颜色和单元格的颜色 */
+
+.review-info .table-body-row-class-name {
+  background: #34495e !important;
+  color: #fff;
+}
+
+.review-info .table-cell-class-name {
+  background: #4278BE !important;
+  color: #fff;
+}
+
+.review-info .multi-level-no-table {
+  border: 1px solid #ebeef5;
+}
+
+.review-info .multi-level-no-table td,
+.review-info .multi-level-no-table th {
+  border-right: 1px solid #ebeef5;
+  /* 导入文件的使用scoped限制css作用的作用范围 */
+  padding: 0 !important;
+}
+
+/* 修改报表里面a标签的默认样式 */
+
+.review-info .table-router-link {
+  text-decoration: none;
+  color: #12c5eb;
+}
+
+/* 设置报表单元格的高度 */
+
+.review-info .multi-level-no-table td p,
+.review-info .multi-level-no-table th p {
+  -webkit-margin-before: 5px;
+  -webkit-margin-after: 5px;
+}
+
+/* 暂无数据的样式 */
+
+.review-info .el-table__empty-block {
+  background: #34495e;
+}
+
+/* element ui table中一列highlight显示，hover时如何不移除颜色？ */
+
+.review-info .el-table__body tr:hover>td {
+  background-color: #18232d !important;
+}
+
+.review-info .el-table__body tr.current-row>td {
+  background-color: #18232d !important;
+}

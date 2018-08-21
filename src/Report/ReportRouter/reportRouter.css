@@ -1,0 +1,9 @@
+.report .check-footer-p {
+  position: relative;
+  bottom: 36px;
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  max-height: 38px;
+  margin-left: 30px;
+}

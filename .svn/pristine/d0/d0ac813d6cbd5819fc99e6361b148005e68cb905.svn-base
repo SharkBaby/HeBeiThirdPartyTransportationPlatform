@@ -1,0 +1,191 @@
+div.digits{
+    vertical-align: middle;
+    display: table-cell;
+}
+.digits-content {
+  display: inline-block;
+  text-align: center;
+  background-color: #1E2B3B;
+  border: 1px solid #565D65;
+  padding: 10px;
+  margin-right: 5px;
+}
+
+div.zero {
+  width: 29px;
+  height: 46px;
+  position: relative;
+  line-height: 226px;
+  color: #8EFFFF;
+}
+
+/* Common style for LED Number */
+
+.digits div span:before,
+.digits div span:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+}
+
+.digits div.zero .d1,
+.digits div.zero .d3,
+.digits div.zero .d4,
+.digits div.zero .d5,
+.digits div.zero .d6,
+.digits div.zero .d7 {
+  opacity: 1;
+}
+
+.digits .d1 {
+  height: 5px;
+  width: 16px;
+  top: 0;
+  left: 6px;
+}
+
+.digits .d1:before {
+  border-width: 0 5px 5px 0;
+  border-right-color: inherit;
+  left: -5px;
+}
+
+.digits .d1:after {
+  border-width: 0 0 5px 5px;
+  border-left-color: inherit;
+  right: -5px;
+}
+
+.digits .d2 {
+  height: 5px;
+  width: 16px;
+  top: 20px;
+  left: 6px;
+}
+
+.digits .d2:before {
+  border-width: 3px 4px 2px;
+  border-right-color: inherit;
+  left: -8px;
+}
+
+.digits .d2:after {
+  border-width: 3px 4px 2px;
+  border-left-color: inherit;
+  right: -8px;
+}
+
+.digits .d3 {
+  height: 5px;
+  width: 16px;
+  top: 40px;
+  left: 6px;
+}
+
+.digits .d3:before {
+  border-width: 5px 5px 0 0;
+  border-right-color: inherit;
+  left: -5px;
+}
+
+.digits .d3:after {
+  border-width: 5px 0 0 5px;
+  border-left-color: inherit;
+  right: -5px;
+}
+
+.digits .d4 {
+  width: 5px;
+  height: 10px;
+  top: 7px;
+  left: 0;
+}
+
+.digits .d4:before {
+  border-width: 0 5px 5px 0;
+  border-bottom-color: inherit;
+  top: -5px;
+  left: 0;
+}
+
+.digits .d4:after {
+  border-width: 0 0 5px 5px;
+  border-left-color: inherit;
+  bottom: -5px;
+  left: 0;
+}
+
+.digits .d5 {
+  width: 5px;
+  height: 10px;
+  top: 7px;
+  right: 0;
+}
+
+.digits .d5:before {
+  border-width: 0 0 5px 5px;
+  border-bottom-color: inherit;
+  top: -5px;
+  right: 0;
+}
+
+.digits .d5:after {
+  border-width: 5px 0 0 5px;
+  border-top-color: inherit;
+  bottom: -5px;
+  right: 0;
+}
+
+.digits .d6 {
+  width: 5px;
+  height: 10px;
+  top: 28px;
+  left: 0;
+}
+
+.digits .d6:before {
+  border-width: 0 5px 5px 0;
+  border-bottom-color: inherit;
+  top: -5px;
+  left: 0;
+}
+
+.digits .d6:after {
+  border-width: 0 0 5px 5px;
+  border-left-color: inherit;
+  bottom: -5px;
+  left: 0;
+}
+
+.digits .d7 {
+  width: 5px;
+  height: 10px;
+  top: 28px;
+  right: 0;
+}
+
+.digits .d7:before {
+  border-width: 0 0 5px 5px;
+  border-bottom-color: inherit;
+  top: -5px;
+  right: 0;
+}
+
+.digits .d7:after {
+  border-width: 5px 0 0 5px;
+  border-top-color: inherit;
+  bottom: -5px;
+  right: 0;
+}
+
+.digits div span {
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  transition: 0.25s;
+  background-color: #8EFFFF;
+}
+

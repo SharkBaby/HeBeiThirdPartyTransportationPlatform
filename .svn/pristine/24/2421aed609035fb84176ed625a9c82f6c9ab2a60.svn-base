@@ -1,0 +1,41 @@
+<template>
+  <div class="industry-regulation-part">
+    <p class="industry-regulation-head">{{ indRegTitle }}</p>
+    <div class="regulation-detail-part">
+      <!-- 历史累计上线数 -->
+      <div class="regulation-detail-div">
+        <label>{{hisAmoOnlNumber}}</label>
+        <led-number></led-number>
+      </div>
+      <!-- 今日累计上线数 -->
+      <div class="regulation-detail-div">
+        <label>{{todAmoOnlNumber}}</label>
+        <led-number></led-number>
+      </div>
+      <div class="platform-total">
+        <span class="platform-total-number">{{platTotalNmber}}</span>
+        <label>{{totalText}}</label>
+      </div>
+    </div>
+  </div>
+</template>
+<style type="text/css" src="./industryRegulation.css"></style>
+
+<script>
+import LedNumber from "./LedNumber/LedNumber";
+export default {
+  name: 'IndustryRegulation',
+  components:{
+    LedNumber
+  },
+  data () {
+    return {
+      indRegTitle: '运营机构监管',
+      hisAmoOnlNumber: '历史累计上线数: ',
+      todAmoOnlNumber: '今日累计上线数: ',
+      platTotalNmber: 0,
+      totalText: '单位总数'
+    }
+  }
+}
+</script>

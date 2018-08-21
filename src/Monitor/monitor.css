@@ -1,0 +1,144 @@
+.monitor {
+  height: 86%;
+  margin: auto 40px;
+}
+
+/* 输入框样式设置 */
+
+.monitor-presearch{
+  height: 5%;
+}
+.monitor-tree {
+  height: 95%;
+}
+.monitor .monitor-blank {
+  width: 70%;
+}
+.monitor-tree .monitor-car-set .monitor_car_list {
+  list-style: none;
+  width: 100%;
+  height: 29px;
+  line-height: 30px;
+}
+
+.monitor-tree .monitor-car-set .monitor_car_list .car-title {
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 3px;
+  color: #fff;
+  vertical-align: middle;
+}
+
+.monitor-tree .monitor-car-set .monitor_car_list .car-title a {
+  width: 32px;
+  height: 25px;
+  float: right;
+  margin-left: 5px;
+}
+
+.monitor-tree .monitor-car-set .monitor_car_list .car-title .online {
+  background: url('../assets/Views/Monitor/online.png') no-repeat 0px -3px;
+}
+
+.monitor-tree .monitor-car-set .monitor_car_list .car-title .offline {
+  background: url('../assets/Views/Monitor/offline.png') no-repeat 0px -3px;
+}
+
+ul.monitor-car-set {
+  -webkit-padding-start: 0;
+}
+
+div.monitor-show {
+  height: 100%;
+  min-height: 570px;
+}
+
+.monitor-left,
+.monitor-right {
+  height: 100%;
+}
+
+.zone-check-eltree {
+  max-height: 100%;
+  overflow: auto;
+}
+
+/* 鼠标移动在节点上显示的颜色 */
+
+.monitor .el-tree {
+  background: #2C4257;
+  color: #fff;
+}
+
+.monitor .el-tree-node__content:hover {
+  background: rgb(18, 222, 221) !important;
+}
+
+.is-current>.el-tree-node__content {
+  background: rgb(18, 222, 221) !important;
+}
+
+.is-expanded>.el-tree-node__content {
+  background: inherit !important;
+}
+
+/* 设置树形结构的字体样式 */
+
+.monitor-tree-text {
+  font-size: 14px;
+}
+
+.custom-tree-node .offline {
+  background: url('../assets/Views/Monitor/offline.png') no-repeat;
+  width: 32px;
+  height: 25px;
+  display: inline-block;
+}
+
+.custom-tree-node .online {
+  background: url('../assets/Views/Monitor/online.png') no-repeat;
+  width: 32px;
+  height: 25px;
+  display: inline-block;
+}
+
+/* radio button单选按钮的样式 */
+
+.monitor .monitor-radio {
+  color: #fff;
+  margin-left: unset !important;
+}
+.monitor .el-radio-group{
+  width: 25%;
+}
+
+/* Start - 预搜索功能 */
+
+.monitor .pre-search {
+  position: fixed;
+  z-index: 1;
+  background: #fff;
+  color: rgb(53, 53, 53);
+  /* 注释人：向浩
+  注释时间：2018-07-10
+  注释原因：为了满足基本信息下面的预搜索功能样式改变 */
+  /* width: 140px; */
+  line-height: 25px;
+  padding-left: 15px;
+  font-size: 14px;
+}
+
+.monitor .pre-search-item {
+  display: block !important;
+}
+
+.monitor .pre-search-item:hover {
+  background: rgb(253, 245, 206);
+  color: rgb(200, 120, 22);
+}
+
+.monitor .pre-search-item>label {
+  cursor: pointer;
+}
+
+/* End - 预搜索功能 */

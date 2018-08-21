@@ -1,0 +1,24 @@
+<template>
+  <div class="home-split-line">
+    <p>
+      <span class="weather-ico"></span>
+      <label class="weather-label">{{weatherdetail}}</label>
+    </p>
+    <personal-settings></personal-settings>
+  </div>
+</template>
+<style src="./weather.css" type="text/css"></style>
+<script>
+import PersonalSettings from './PersonalSettings/PersonalSettings';
+export default {
+  name: 'Weather',
+  components:{
+    PersonalSettings
+  },
+  data () {
+    return {
+      weatherdetail: '长沙明日:雷雨大风',
+    }
+  }
+}
+</script>

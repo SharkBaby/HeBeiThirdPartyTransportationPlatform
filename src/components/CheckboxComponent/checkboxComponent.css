@@ -1,0 +1,13 @@
+.checkbox-text {
+  width: 140px;
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.chkbox-item {
+  display: block;
+  height: 34px;
+  line-height: 34px;
+}

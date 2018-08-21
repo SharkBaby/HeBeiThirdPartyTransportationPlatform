@@ -1,0 +1,76 @@
+<template>
+  <div class="login-part">
+    <h1>
+      <span class="loginheader-logo"></span>
+      <label class="loginheader">{{ firHeaderTle }}<br>{{secHeaderTle}}</label>
+    </h1>
+    <el-form :model="ruleForm2" :label-position="labelPosition" status-icon :rules="rules2" ref="ruleForm2" label-width="100px" class="login-Form">
+      <el-form-item label="用户名: " prop="age" class="labelName">
+        <el-input v-model.number="ruleForm2.age"></el-input>
+      </el-form-item>
+      <el-form-item label="密码: " prop="pass" class="labelName">
+        <el-input type="password" v-model="ruleForm2.pass" auto-complete="off">
+        </el-input>
+      </el-form-item>
+      <el-form-item>
+        <el-button type="primary" @click="submitForm('ruleForm2')" class="submitBtn">提交</el-button>
+      </el-form-item>
+    </el-form>
+  </div>
+</template>
+<style src="./login.css" type="text/css"></style>
+<script>
+export default {
+    name: 'Login',
+    data() {
+      var checkAge = (rule, value, callback) => {
+        if (!value) {
+          return callback(new Error('用户名不能为空'));
+        }
+      };
+      var validatePass = (rule, value, callback) => {
+        if (value === '') {
+          callback(new Error('请输入密码'));
+        } else {
+          if (this.ruleForm2.checkPass !== '') {
+            this.$refs.ruleForm2.validateField('checkPass');
+          }
+          callback();
+        }
+      };
+      return {
+        firHeaderTle: '重点营运车辆动态信息',
+        secHeaderTle: '公共监管与服务平台',
+        labelPosition: 'right',
+        ruleForm2: {
+          pass: '',
+          checkPass: '',
+          age: ''
+        },
+        rules2: {
+          pass: [
+            { validator: validatePass, trigger: 'blur' }
+          ],
+          age: [
+            { validator: checkAge, trigger: 'blur' }
+          ]
+        }
+      };
+    },
+    methods: {
+      submitForm(formName) {
+        this.$refs[formName].validate((valid) => {
+          if (valid) {
+            alert('submit!');
+          } else {
+            console.log('error submit!!');
+            return false;
+          }
+        });
+      },
+      resetForm(formName) {
+        this.$refs[formName].resetFields();
+      }
+    }
+  }
+</script>

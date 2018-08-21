@@ -1,0 +1,24 @@
+div.home-security-right-part {
+  height: 100%;
+}
+
+.home-security-right .active {
+  background: rgb(73, 92, 110);
+}
+
+.home-security-right .home-security-right-item {
+  min-height: 33%;
+  text-align: center;
+  /* position: relative;
+  top: 11%; */
+  width: 58%;
+  margin: auto;
+  /*居中显示元饼图*/
+}
+
+/* 元饼图选中状态样式 */
+
+.security-right-selected {
+  background: rgb(73, 92, 110);
+  border-radius: 25px;
+}

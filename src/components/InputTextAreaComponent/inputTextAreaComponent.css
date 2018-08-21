@@ -1,0 +1,12 @@
+.input-textarea {
+  font-size: 12px;
+  margin: 10px auto;
+}
+
+/* Set label name height */
+
+.textarea-label-row {
+  text-align: right;
+  line-height: 75px;
+  padding-right: 10px;
+}

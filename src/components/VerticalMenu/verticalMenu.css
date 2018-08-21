@@ -1,0 +1,28 @@
+.vertical-menu {
+  height: 100%;
+}
+
+.router-link {
+  text-decoration: none;
+}
+
+.left-navigation-menu {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-right: solid 1px #e6e6e6;
+}
+
+.left-navigation-menu .router-link .is-active {
+  background-color: #2C4257 !important;
+}
+
+/* 隐藏左边导航栏的右边线 */
+
+.left-navigation-menu ul.el-menu {
+  border-right: none;
+}
+
+.vertical-menu .el-tabs__content {
+  padding-left: 30px;
+}

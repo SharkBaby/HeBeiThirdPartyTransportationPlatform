@@ -1,0 +1,95 @@
+<template>
+  <div :id="idName">
+  </div>
+</template>
+<style type="text/css" src="./securityCtntMap.css"></style>
+<script>
+import { packageZone, packageCity, cityInfo } from '../../../Base/Package';
+import * as echarts from 'echarts';
+import 'echarts/map/js/china.js';
+import 'echarts/map/js/province/hunan.js';
+import axios from 'axios';
+export default {
+  name: 'SecurityContent',
+  data () {
+    return {
+      secHeadTitle: '安全监管',
+      idName: 'home_security_ul',
+      homeSecurityCache: {
+          vehicleOnline : this.cityInfo
+      }
+    }
+  },
+  mounted(){
+    this.drawSecCtntMap();
+  },
+  methods: {
+    drawSecCtntMap: function(){
+      // 基于准备好的dom，初始化echarts实例
+      var myChart = echarts.init(document.getElementById(this.idName));
+      // 指定图表的配置项和数据
+      var option = this.getChinaMapOption();
+      // 使用刚指定的配置项和数据显示图表。
+      // this.initChart('home_security_ul');
+      myChart.setOption(option);
+    },
+    // this function is for china map instead of province map
+    getChinaMapOption: function(){
+      return {
+        title: {
+            text: '车辆在线情况',
+            y: 'bottom',
+            x:'center',
+            textStyle : {
+                color: '#fff',
+                fontSize: 15,
+                fontWeight: 300
+            }
+        },
+        tooltip: {
+            trigger: 'item'
+        },
+        visualMap: {
+            min: 0,
+            max: 0,
+            left: 'right',
+            top: '40%',
+            text: ['高', '低'],           // 文本，默认为数值文本
+            calculable: true,
+            precision: 2,
+            inRange: {
+                color: ['#DCF0FF', '#68BDFF', '#4593FF', '#1483D9', '#106BB2']
+            }
+        },
+        series: [
+            {
+                name: '省级地域分布',
+                type: 'map',
+                mapType: '湖南',
+                roam: false,
+                label: {
+                    normal: {
+                        show: false
+                    },
+                    emphasis: {
+                        show: false
+                    }
+                },
+                selectedMode: 'single',
+                itemStyle: {
+                    normal: {
+                      areaColor: 'rgb(43,61,78)',
+                      borderColor: 'rgb(228,230,231)'
+                    },
+                    emphasis: {
+                      areaColor: 'rgb(26,44,54)'
+                    }
+                },
+                data: []
+            }
+        ]
+      }
+    },
+  }
+}
+</script>

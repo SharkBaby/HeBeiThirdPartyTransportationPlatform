@@ -1,0 +1,12 @@
+div.vehicle-distribute-part{
+  padding: 16px;
+}
+p.vehicle-distribute-head {
+  font-size: 15px;
+  font-weight: 300;
+  color: #fff;
+}
+div#vehicle-distribute-echarts{
+  width: 600px;
+  height: 340px;
+}

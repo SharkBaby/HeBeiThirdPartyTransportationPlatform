@@ -1,0 +1,150 @@
+/* set Tab Header */
+
+.supervise-multi-level .el-tabs__nav {
+  text-align: center;
+  float: none;
+}
+
+.supervise-multi-level .el-tabs__item {
+  color: #fff;
+  font-size: 16px;
+}
+
+.supervise-multi-level .el-tabs__active-bar {
+  display: inline;
+  left: auto;
+}
+
+.supervise-multi-level .multi-level-search-creteria {
+  margin-bottom: 10px;
+}
+
+/* 设置表头的颜色和单元格的颜色 */
+
+.supervise-multi-level .table-body-row-class-name {
+  background: #34495e !important;
+  color: #fff;
+}
+
+.supervise-multi-level .table-cell-class-name {
+  background: #4278BE !important;
+  color: #fff;
+}
+
+.supervise-multi-level .multi-level-table {
+  border: 1px solid #ebeef5;
+}
+
+.supervise-multi-level .multi-level-table td,
+.supervise-multi-level .multi-level-table th {
+  border-right: 1px solid #ebeef5;
+  padding: 0;
+}
+
+/* 修改报表里面a标签的默认样式 */
+
+.supervise-multi-level .table-router-link {
+  text-decoration: none;
+  color: #12c5eb;
+}
+
+/* 设置报表单元格的高度 */
+
+.supervise-multi-level .multi-level-table td p,
+.supervise-multi-level .multi-level-table th p {
+  -webkit-margin-before: 5px;
+  -webkit-margin-after: 5px;
+}
+
+/* 暂无数据的样式 */
+
+.supervise-multi-level .el-table__empty-block {
+  background: #34495e;
+}
+
+/* element ui table中一列highlight显示，hover时如何不移除颜色？ */
+
+.supervise-multi-level .el-table__body tr:hover>td,
+.supervise-multi-level .el-table__body tr.hover-row>td {
+  /* background-color: initial !important; */
+  background-color: #18232d !important;
+}
+
+.supervise-multi-level .el-table__body tr>td:hover {
+  /* background-color: initial !important; */
+  background-color: #18232d !important;
+}
+
+.supervise-multi-level .el-table td {
+  padding: 0;
+}
+
+.supervise-multi-level .el-table__body tr:hover>td {
+  background-color: #18232d !important;
+}
+
+.supervise-multi-level .el-table__body tr.current-row>td {
+  background-color: #18232d !important;
+}
+
+/* ZoneCheckRank */
+
+.supervise-multi-level .el-table__body-wrapper,
+.supervise-multi-level .el-table--scrollable-x .el-table__body-wrapper {
+  overflow-x: unset;
+}
+
+.supervise-multi-level .check-footer-p {
+  color: #fff;
+  font-size: 14px;
+  max-height: 38px;
+}
+
+/* pagination */
+
+.supervise-multi-level .multi-level-pagination {
+  text-align: right;
+}
+
+/* 调整分页的字体样式 */
+
+.supervise-multi-level .multi-level-pagination .el-pagination__total,
+.supervise-multi-level .multi-level-pagination .el-pagination__jump {
+  color: #fff;
+}
+
+/* 实时警情的样式处理 */
+
+.supervise-multi-level .supervise-btn {
+  background: url('../../assets/icons.png') no-repeat;
+  background-position: -154px -442px;
+  float: left;
+}
+
+.supervise-multi-level .supervise-btn:hover {
+  background-position: -199px -442px;
+}
+
+.supervise-multi-level .supervise-location {
+  background: url('../../assets/icons.png') no-repeat;
+  background-position: -330px -442px;
+  float: right;
+}
+
+.supervise-multi-level .supervise-location:hover {
+  background-position: -375px -442px;
+}
+
+.supervise-multi-level .supervise-operation-a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+/* 是否拨打电话 */
+
+.supervise-multi-level .supervise-call {
+  display: inline-block;
+  float: right;
+}
+

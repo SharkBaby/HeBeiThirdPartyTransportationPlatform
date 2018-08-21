@@ -1,0 +1,68 @@
+.home-split-line>p {
+    margin-left: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inline-table;
+}
+span.weather-ico{
+    height: 40px;
+    width: 50px;
+    background: url('../../assets/weather-icon.png') no-repeat;
+    display: inline-block;
+    float: left;
+    background-position: -143px -185px;
+}
+label.weather-label{
+    line-height: 38px;
+}
+div.user-tool{
+    float: right;
+    position: relative;
+    margin-top: -40px;
+    margin-right: 60px;
+}
+div.user-tool>label{
+    line-height: 38px;
+    position: absolute;
+    right: 134px;
+}
+.home-dropDown-style, .user-dropDown-style{
+    display: inline;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.home-dropDown-style>li, .user-dropDown-style>li{
+    display: inline;
+}
+.home-down-icon{
+    display: inline-block;
+    height: 40px;
+    width: 45px;
+    background: url('../../assets/dropDown.png') no-repeat;
+    background-size: 120% 120%;
+    background-position: -5px -3px;
+}
+.user-down-icon{
+    display: inline-block;
+    height: 40px;
+    width: 45px;
+    background: url('../../assets/userCneterGray.png') no-repeat;
+    background-size: 120% 120%;
+    background-position: -5px -3px;
+}
+.superviseCircle, .noCheckCircle {
+    width: 30px;
+    height: 30px;
+    background-color: #D71D20;
+    border-radius: 15px;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    bottom: 13px;
+}
+label.home_message_count {
+    display: inline-block;
+    margin-top: 6px;
+}

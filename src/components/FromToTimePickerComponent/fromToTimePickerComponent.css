@@ -1,0 +1,13 @@
+.fromto-time-picker-component {
+  margin-right: 10px;
+  color: #fff;
+  font-size: 14px;
+  display: inline-block;
+}
+
+/* Set label name height */
+
+.fromto-time-picker-component .label-name {
+  display: block !important;
+  line-height: 30px;
+}

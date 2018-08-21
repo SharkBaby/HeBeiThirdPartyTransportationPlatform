@@ -1,0 +1,54 @@
+<template>
+<div class="home-content">
+	<div class="home-main">
+		<div class="layui-row">
+			<div class="content-left layui-col-xs5 layui-col-sm5 layui-col-md5 layui-col-md5">
+				<main-display-items></main-display-items>
+				<div class="left-top layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12">
+					<div class="home-industry-regulation layui-col-xs8 layui-col-sm8 layui-col-md8 layui-col-lg8">
+						<industry-regulation></industry-regulation>
+					</div>
+					<div class="home-accessPlatform-regulation layui-col-xs4 layui-col-sm4 layui-col-md4 layui-col-lg4">
+						<access-platform-regulation></access-platform-regulation>
+					</div>
+				</div>
+				<div class="left-bottom layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12">
+					<vehicle-distribution-dashboard></vehicle-distribution-dashboard>
+				</div>
+			</div>
+			<div class="content-right layui-col-xs7 layui-col-sm7 layui-col-md7 layui-col-md7">
+				<div class="home-security-left layui-col-xs9 layui-col-sm9 layui-col-md9 layui-col-lg9">
+					<security-content-vue></security-content-vue>
+				</div>
+				<div class="home-security-right layui-col-xs3 layui-col-sm3 layui-col-md3 layui-col-lg3">
+					<home-security-right></home-security-right>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</template>
+<style src="./bodycontent-container.css" type="text/css"></style>
+<style src="../../../node_modules/layui-src/src/css/layui.css" type="text/css"></style>
+<script>
+import MainDisplayItems from '../../components/MainDisplayItems/MainDisplayItems';
+import IndustryRegulation from '../../components/IndustryRegulation/IndustryRegulation';
+import AccessPlatformRegulation from '../../components/AccessPlatformRegulation/AccessPlatformRegulation';
+import VehicleDistributionDashboard from '../../components/VehicleDistributionDashboard/VehicleDistributionDashboard';
+// import layui from 'layui-src';
+import 'layui-src';
+import SecurityContentVue from '../../components/SecurityContent/SecurityContent.vue';
+import HomeSecurityRight from '../../components/HomeSecurityRight/HomeSecurityRight';
+// import '../../../node_modules/layui-src/src/css/layui.css';
+export default {
+	name: 'BodyContent-Container',
+	components:{
+		MainDisplayItems,
+		IndustryRegulation,
+		AccessPlatformRegulation,
+		VehicleDistributionDashboard,
+		SecurityContentVue,
+		HomeSecurityRight
+	}
+}
+</script>

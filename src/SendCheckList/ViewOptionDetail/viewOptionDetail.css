@@ -1,0 +1,55 @@
+.view-option-detail {
+  text-align: left;
+}
+
+/* 查看检查记录 */
+
+.view-option-detail .viewtitle {
+  position: absolute;
+  top: 16px;
+}
+
+.view-option-detail .viewprint {
+  position: absolute;
+  top: 16px;
+  right: 48px;
+}
+
+.view-option-detail .comment-note {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+
+.view-option-detail .view-option-body-content {
+  border: 1px solid #e8d6d6;
+}
+
+.view-option-detail .view-option-body-left {
+  border-right: 1px solid #e8d6d6;
+  padding-left: 10px;
+  padding-right: 30px;
+}
+
+.view-option-detail .view-option-body-right {
+  padding-left: 30px;
+}
+
+/* 检查人员手机推送 */
+
+.view-option-detail .sendchecklist-view-basic {
+  width: 220px;
+  height: 35px;
+  color: #FFF;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.view-option-detail .sendchecklist-view-bottom {
+  background: #424242;
+}
+
+.view-option-detail .sendchecklist-view-save {
+  background: #0083D2;
+  float: right;
+}

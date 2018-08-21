@@ -1,0 +1,13 @@
+.single-daypicker-component {
+  margin-right: 10px;
+  color: #fff;
+  font-size: 14px;
+  display: inline-block;
+}
+
+/* Set label name height */
+
+.single-daypicker-component .label-name {
+  line-height: 30px;
+  display: block;
+}

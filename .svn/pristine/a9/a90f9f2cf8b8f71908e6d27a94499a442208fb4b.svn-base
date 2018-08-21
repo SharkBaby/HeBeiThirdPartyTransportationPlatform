@@ -1,0 +1,19 @@
+<template>
+  <header class="home-header">
+    <h1>
+      <img src="../../assets/logo.png" class="header-logo">
+      <label class="header-label">{{ headerTitle }}</label>
+    </h1>
+  </header>
+</template>
+<style src="./header.css" type="text/css"></style>
+<script>
+export default {
+  name: 'Header',
+  data () {
+    return {
+      headerTitle: '湖南省重点营运车辆动态信息公共监管与服务平台'
+    }
+  }
+}
+</script>

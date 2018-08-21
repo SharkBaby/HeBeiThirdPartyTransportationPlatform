@@ -1,0 +1,21 @@
+.base-info .company-multilevel .el-row,
+.base-info .driver-info-multilevel .el-row,
+.base-info .role-multilevel .el-row,
+.base-info .user-info-multilevel .el-row,
+.base-info .vehicle-multilevel .el-row {
+  display: inline-block;
+}
+
+/* Vehicle */
+
+.vehicle-multilevel {
+  overflow: auto;
+}
+
+.base-info .company,
+.base-info .driver-info,
+.base-info .role,
+.base-info .user-info,
+.base-info .vehicle {
+  margin-left: 30px;
+}

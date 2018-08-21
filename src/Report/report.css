@@ -1,0 +1,24 @@
+.report {
+  height: 86%;
+  margin: auto 40px;
+}
+
+.report .vehical-install-multilevel .el-row,
+.report .vehicle-online-multilevel .el-row,
+.report .vehicle-upline-rate-multilevel .el-row,
+.report .current-online-multilevel .el-row,
+.report .alarm-supervision-multilevel .el-row,
+.report .alarm-deal-multilevel .el-row,
+.report .alarm-push-multilevel .el-row {
+  display: inline-block;
+}
+
+.report .vehical-install,
+.report .vehicle-online,
+.report .vehicle-upline-rate,
+.report .current-online,
+.report .alarm-supervision,
+.report .alarm-deal,
+.report .alarm-push {
+  margin-left: 30px;
+}

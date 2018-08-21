@@ -1,0 +1,35 @@
+.complain-component{
+    padding: 0 20px;
+}
+.Complain{
+    width: 100%;
+    height: 200px;
+    box-shadow: -2px 0 2px #5c6369, 2px 0 2px #5c6369, 0 -2px #5c6369, 0 2px 3px #5c6369;
+    float: left;
+    margin-right: 1%;
+    margin-top: 15px;
+    padding: 10px;
+}
+.complain_box :first-child{
+    margin-left: 1%;
+}
+.Complain h3{
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.complain_rate{
+    width: 100;
+    height: 60px;
+    margin: 10% auto;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+}
+.complains{
+    font-size: 35px;
+}
+.complain{
+    color: brown
+}

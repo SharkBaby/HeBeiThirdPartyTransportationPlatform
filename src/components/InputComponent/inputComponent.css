@@ -1,0 +1,13 @@
+.input-text {
+  width: 135px;
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+/* Set label name height */
+
+.input-text .label-name {
+  line-height: 30px;
+}

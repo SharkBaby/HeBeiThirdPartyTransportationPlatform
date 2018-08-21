@@ -1,0 +1,19 @@
+重要声明：请后面参与该项目的开发人员，不论是以后维护还是新功能开发，请大家写好注释，提交到Gitblit代码仓库，做好代码版本控制，希望可以早日实现持续集成（CI）,持续部署（CD）以及自动化测试等技术（Automation Test）
+目前团队已经进入到Agile模式，大家共同努力，从现在做起，这样以后才会有更好的职场发展 - 向浩（2018-06-27）
+
+
+1. computed 计算得到的结果不能参与methods里面的计算，因为他不会更新视图除非依赖的变量发生了变化（2018-05-24）
+2. data 里面的数组是检测不到数据变化的， 只有通过json 数据格式才能检测到数据变化，触发computed
+3. indexOf 需要通过下面的比较来判断 resultData.xAxisdata.indexOf(item.Hour) >= 0
+4. myChart.resize();//注意这里需要手动的重新绘制
+5. 但其他页面需要使用到当前页面的数据的时候可以将数据暂时存储到localStorage 或者sessionStorage 里面减少内存的消耗
+6. /* 感悟：选择除第一个以为的其他元素 */
+    .chkbox-all-vehicle .el-checkbox+.el-checkbox{
+    margin-left: 10px;
+    }
+7.  el-checkbox 只能使用@change事件，不能使用@mouseup 等其他事件 <el-checkbox v-model="checked" @change="">备选项</el-checkbox>
+    <el-checkbox v-model="vhcleItem.compVal" v-for="(vhcleItem, vhcleKey) of vhcleRslt" :key="vhcleKey" @change="handleVhcleType(vhcleKey)">{{vhcleItem.labelName}}</el-checkbox>
+8. 在往数组里面push新的元素的时候，要记得先清空旧数据，然后在进行push操作（2018-06-01）
+9. json对象里面不能使用for of循环，可以使用for in循环来遍历 2018-06-14
+10.（重要）在vue组件内部引入样式的时候，记住一定要带上scoped,不然在最后打包的时候会出现样式冲突，很难解决（2018-07-26） 
+11. websocket由于网络原因断掉后重连（待实现）
